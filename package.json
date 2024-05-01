@@ -1,0 +1,17 @@
+{
+  "name": "for-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "const.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.1.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "globals": "^15.1.0"
+  }
+}
