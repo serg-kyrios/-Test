@@ -1,32 +1,24 @@
 'use strict';
-let arr = ['a,b,c'];
-let obj = {
-    0: 'a',
-    1: 'b',
-    p: 'c',
+
+const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
+console.log(numberOfFilms);
+let personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false,
 };
-obj[11] = 'q,w,3';
-console.log(obj[0]);
-console.log(arr[0]);
-console.log(obj[11]);
-console.log(obj.p);
 
-let storeDescription = {
-    budget: 10000,
-    employees: ['q', 'w', 'e'],
-    products: { товар: 10000, товар2: 2 },
-    open: true,
+const namerOfFilms = prompt('Один из последних просмотренных фильмов?', '');
+const ratingOfFilms = prompt('На сколько оцените его?', '');
+const namerOfFilms2 = prompt('Один из последних просмотренных фильмов?', '');
+const ratingOfFilms2 = prompt('На сколько оцените его?', '');
+const movies = {
+    namerOfFilms: ratingOfFilms,
+    namerOfFilms2: ratingOfFilms2,
 };
-//const answer = prompt(Number('You are over 18', ''));
-//console.log(answer + 5);
-//document.write(storeDescription);
-
-let incr = 10,
-    decr = 10;
-
-++incr;
---decr;
-
-console.log(incr++);
-console.log(decr--);
-console.log(42 % 3);
+console.log(personalMovieDB);
+console.log(personalMovieDB);
+personalMovieDB.movies[namerOfFilms] = ratingOfFilms;
+personalMovieDB.movies[namerOfFilms2] = ratingOfFilms2;
